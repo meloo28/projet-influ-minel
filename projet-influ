@@ -1,0 +1,6 @@
+# mise en place d'un menu 
+print("1. Lire un fichier.")
+print("2. Ajouter un élément au fichier")
+print("3. Modifier un élément du fichier")
+print("4;
+print("")
