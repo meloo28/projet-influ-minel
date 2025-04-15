@@ -2,5 +2,6 @@
 print("1. Lire un fichier.")
 print("2. Ajouter un élément au fichier")
 print("3. Modifier un élément du fichier")
-print("4;
-print("")
+print("4. Supprimer un élément du fichier")
+print("5. Fermer le programme.")
+input 
