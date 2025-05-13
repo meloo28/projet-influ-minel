@@ -1,7 +1,42 @@
-# mise en place d'un menu 
-print("1. Lire un fichier.")
-print("2. Ajouter un élément au fichier")
-print("3. Modifier un élément du fichier")
-print("4. Supprimer un élément du fichier")
-print("5. Fermer le programme.")
-input 
+# incersion de csv
+import csv
+# mise en place d'une fonction pour un menu 
+def fn_menu():
+    print(f"\nMenu :")
+    print(f"1. Lire un fichier.")
+    print(f"2. Ajouter un élément au fichier")
+    print(f"3. Modifier un élément du fichier")
+    print(f"4. Supprimer le fichier")
+    print(f"5. Fermer le programme.")
+    choix = input(f"Entrez votre choix (1, 2, 3, 4, ou 5) : ")
+    return choix
+
+# definition d'une fonction qui permet de lire le fichier
+def fn_ouverture_de_fichier(file): 
+    try :
+        with open (file,"r") as fch :
+            data = csv.reader(fch, delimiter=";")
+            return list(data)
+    except Exception as e :
+        print("Erreur dans l'ouverture du fichier.",e)
+    
+# définition d'une fonction permettant d'ajouter un élément au fichier
+def fn_add_element(nv_elem,file):
+    try :
+        with open(file, "a") as fch :
+            data = csv.writer(fch,delimiter=";")
+            data.writerows (nv_elem)
+    except Exception as e :
+        print("Erreur dans l'ajout du fichier.", e)
+
+# définition d'une fonction permettant
+def fn_edit_file():
+
+
+# définition d'une fonction permettant de supprimer un fichier
+def fn_rm_file():
+
+
+# définition d'une fonction 
+def fn_gestion():
+
